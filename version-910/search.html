@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>搜索影视-高清剧集大全</title>
+    <meta name="description" content="搜索最新国产影视免费在线高清内容，可按影片名、地区、年份与类型筛选。">
+    <meta name="keywords" content="最新国产影视免费在线高清 - 电视剧电影大全-必看电影,国产,视频,免费,在线观看,高清,影视大全,搜索,筛选">
+    <meta name="renderer" content="webkit">
+    <meta name="applicable-device" content="pc,mobile">
+    <link rel="stylesheet" href="./assets/index-_mwyehca.css">
+    <link rel="stylesheet" href="./assets/site.css">
+    <script type="module" src="./assets/site.js"></script>
+    <script src="./assets/search-index.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="site-logo" href="./index.html" aria-label="高清剧集大全">
+                <span class="site-logo__icon">🎬</span>
+                <span class="site-logo__text">高清剧集大全</span>
+            </a>
+            <nav class="desktop-nav" aria-label="主导航">
+                <a class="nav-link" href="./index.html">首页</a>
+                <a class="nav-link" href="./categories.html">分类</a>
+                <a class="nav-link" href="./ranking.html">排行榜</a>
+                <a class="nav-link active" href="./search.html">搜索</a>
+            </nav>
+            <form class="header-search" action="./search.html" method="get">
+                <label class="sr-only" for="header-search-keyword">搜索影视</label>
+                <input id="header-search-keyword" name="q" type="search" placeholder="搜索影片、类型、地区" autocomplete="off">
+                <button type="submit" aria-label="搜索">⌕</button>
+            </form>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <form class="mobile-search" action="./search.html" method="get">
+                <input name="q" type="search" placeholder="搜索影片、类型、地区">
+                <button type="submit">搜索</button>
+            </form>
+            <a class="mobile-link" href="./index.html">首页</a>
+            <a class="mobile-link" href="./categories.html">分类</a>
+            <a class="mobile-link" href="./ranking.html">排行榜</a>
+            <a class="mobile-link" href="./search.html">搜索</a>
+            <div class="mobile-category-list">
+                <a class="mobile-link muted" href="./category-guochan-hot.html">国产热播</a><a class="mobile-link muted" href="./category-movie-picks.html">电影精选</a><a class="mobile-link muted" href="./category-tv-series.html">电视剧集</a><a class="mobile-link muted" href="./category-drama.html">剧情佳作</a><a class="mobile-link muted" href="./category-comedy.html">欢乐喜剧</a><a class="mobile-link muted" href="./category-action-fantasy.html">动作奇幻</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero page-hero--compact">
+            <div class="container">
+                <p class="hero-eyebrow">全站检索</p>
+                <h1>搜索与筛选</h1>
+                <p>支持按影片名、简介、地区、年份、类型和标签快速检索，全站共 2000 部影片。</p>
+            </div>
+        </section>
+
+        <section class="site-section">
+            <div class="container">
+                <form class="search-console" id="movie-search-form">
+                    <label for="movie-search-input">输入关键词</label>
+                    <input id="movie-search-input" type="search" placeholder="例如：国产、喜剧、2026、悬疑、青春">
+                    <div class="search-console__row">
+                        <select id="movie-search-region" aria-label="地区筛选">
+                            <option value="">全部地区</option>
+                        </select>
+                        <select id="movie-search-year" aria-label="年份筛选">
+                            <option value="">全部年份</option>
+                        </select>
+                        <select id="movie-search-type" aria-label="类型筛选">
+                            <option value="">全部类型</option>
+                        </select>
+                        <button type="submit">搜索</button>
+                    </div>
+                </form>
+                <div class="search-status" id="movie-search-status">输入关键词或选择筛选条件后显示结果。</div>
+                <div class="movie-grid" id="movie-search-results"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <a class="footer-logo" href="./index.html">高清剧集大全</a>
+                <p>汇聚最新国产影视资源，提供免费在线高清观看，并建立电视剧电影大全。平台资源丰富，分类清晰，播放体验优良，是观看国产内容的理想场所。</p>
+                <p>共收录 2000 部影视内容，分类清晰，支持在线播放与全站检索。</p>
+            </div>
+            <div class="footer-links">
+                <strong>快速分类</strong>
+                <div><a href="./category-guochan-hot.html">国产热播</a><a href="./category-movie-picks.html">电影精选</a><a href="./category-tv-series.html">电视剧集</a><a href="./category-drama.html">剧情佳作</a><a href="./category-comedy.html">欢乐喜剧</a><a href="./category-action-fantasy.html">动作奇幻</a><a href="./category-suspense.html">悬疑犯罪</a><a href="./category-romance-youth.html">爱情青春</a><a href="./category-animation-family.html">动画家庭</a><a href="./category-history-biography.html">历史传记</a><a href="./category-documentary.html">纪录人文</a><a href="./category-overseas.html">海外佳作</a></div>
+            </div>
+        </div>
+    </footer>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
